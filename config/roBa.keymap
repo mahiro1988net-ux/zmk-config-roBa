@@ -103,7 +103,7 @@
 
         SYMBOL {
             bindings = <
-&kp EXCLAMATION  &trans  &kp HASH  &trans  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp TILDE
+&kp EXCLAMATION  &trans  &kp HASH  &trans  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans
 &trans           &trans  &trans    &trans  &trans       &trans      &trans  &trans     &trans         &trans        &kp RIGHT_BRACKET     &kp BACKSLASH
 &trans           &trans  &trans    &trans  &trans       &trans      &trans  &trans     &trans         &trans        &kp RIGHT_BRACE       &trans
 &trans           &trans  &trans    &trans  &trans       &trans      &trans  &trans                                                        &trans
