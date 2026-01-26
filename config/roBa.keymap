@@ -103,10 +103,10 @@
 
         SYMBOL {
             bindings = <
-&kp EXCLAMATION  &kp LC(LS(AT_SIGN))  &kp HASH  &kp LC(DOLLAR)  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans           &trans               &trans    &trans          &trans       &trans      &trans  &trans     &trans         &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans           &trans               &trans    &trans          &trans       &trans      &trans  &trans     &trans         &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans           &trans               &trans    &trans          &trans       &trans      &trans  &trans                                                        &kp BACKSLASH
+&kp EXCLAMATION  &kp LC(LEFT_BRACKET)  &kp HASH  &kp LC(DLLR)  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans           &trans                &trans    &trans        &trans       &trans      &trans  &trans     &trans         &trans        &kp RIGHT_BRACKET     &kp NON_US_BACKSLASH
+&trans           &trans                &trans    &trans        &trans       &trans      &trans  &trans     &trans         &trans        &kp RIGHT_BRACE       &kp UNDERSCORE
+&trans           &trans                &trans    &trans        &trans       &trans      &trans  &trans                                                        &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
