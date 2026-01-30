@@ -68,7 +68,7 @@
 &kp Q             &kp W                    &kp E         &kp R                             &kp T                                                                           &kp Y                   &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S                    &kp D         &kp F                             &kp G                  &kp LS(LG(S))                   &kp ASTERISK             &kp H                   &kp J  &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X                    &kp C         &kp V                             &kp B                  &lt_to_layer_0 4 SEMICOLON      &kp LEFT_PARENTHESIS     &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_CONTROL  &mt LEFT_SHIFT LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 INTERNATIONAL_5  &lt 2 INTERNATIONAL_4  &lt_to_layer_0 3 SPACE          &mt BACKSPACE BACKSPACE  &lt_to_layer_0 1 ENTER                             &kp DEL
+&kp LEFT_CONTROL  &mt LEFT_SHIFT LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 INTERNATIONAL_5  &lt 3 INTERNATIONAL_4  &lt_to_layer_0 2 SPACE          &mt BACKSPACE BACKSPACE  &lt_to_layer_0 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -87,32 +87,32 @@
 
         NUMBER {
             bindings = <
-&kp UNDERSCORE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp FSLH                                  &trans  &trans  &trans  &trans  &trans
-&kp ASTERISK          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS          &kp COLON      &trans  &trans  &trans  &trans  &trans  &trans
-&kp KP_NUMLOCK        &kp KP_NUMBER_0  &kp PERIOD       &trans           &trans             &trans         &trans  &trans                          &trans
+&kp UNDERSCORE   &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9  &kp FSLH                                  &trans  &trans  &trans  &trans  &trans
+&kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp MINUS          &kp COLON      &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMLOCK   &kp ASTERISK     &kp LEFT_PARENTHESIS  &trans           &trans             &trans         &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
-        SYMBOL {
+        ARROW,SYMBOL {
             bindings = <
-&kp EXCLAMATION  &trans  &kp HASH  &trans  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans
-&trans           &trans  &trans    &trans  &trans       &trans      &trans  &trans     &trans         &trans        &kp RIGHT_BRACKET     &kp BACKSLASH
-&trans           &trans  &trans    &trans  &trans       &trans      &trans  &trans     &trans         &trans        &kp RIGHT_BRACE       &trans
-&trans           &trans  &trans    &trans  &trans       &trans      &trans  &trans                                                        &trans
+&kp ESC  &trans          &kp UP_ARROW    &trans           &trans                      &trans  &trans  &trans  &trans  &trans
+&trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans          &trans          &trans           &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans          &trans          &trans           &trans  &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        MOUSE,ARROW {
+        MOUSE {
             bindings = <
-&kp ESC   &trans          &kp UP_ARROW    &trans           &trans                       &trans  &trans    &trans    &trans    &trans
-&kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans    &trans          &trans          &trans           &trans   &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans    &trans          &trans          &trans           &trans   &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB5  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
