@@ -2,22 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    name: Build roBa
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: ZMK Build Action (Left)
-        uses: zmkfirmware/zmk-config-helper@v2
-        with:
-          board: seeeduino_xiao_ble
-          shield: roba_left
-          config_path: config
-
-      - name: ZMK Build Action (Right)
-        uses: zmkfirmware/zmk-config-helper@v2
-        with:
-          board: seeeduino_xiao_ble
-          shield: roba_right
-          config_path: config
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
