@@ -9,14 +9,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: ZMK Build Action (Left)
-        uses: zmkfirmware/zmk-action-build@v2
+        uses: zmkfirmware/zmk-config-helper@v2
         with:
           board: seeeduino_xiao_ble
           shield: roba_left
           config_path: config
 
       - name: ZMK Build Action (Right)
-        uses: zmkfirmware/zmk-action-build@v2
+        uses: zmkfirmware/zmk-config-helper@v2
         with:
           board: seeeduino_xiao_ble
           shield: roba_right
