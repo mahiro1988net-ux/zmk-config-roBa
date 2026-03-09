@@ -3,10 +3,11 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build Test
+    name: Build roBa
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Cache west modules
         uses: actions/cache@v4
         env:
@@ -23,9 +24,17 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - name: ZMK Build Action
+
+      - name: ZMK Build Action (Left)
         uses: zmkfirmware/zmk-action-build@v2
         with:
           board: seeeduino_xiao_ble
-          shield: roba_left roba_right
+          shield: roba_left
+          config_path: config
+
+      - name: ZMK Build Action (Right)
+        uses: zmkfirmware/zmk-action-build@v2
+        with:
+          board: seeeduino_xiao_ble
+          shield: roba_right
           config_path: config
