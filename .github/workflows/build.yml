@@ -3,3 +3,5 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk-action-workflow@v3
+    with:
+      args: "--board seeeduino_xiao_ble"
