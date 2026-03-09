@@ -4,4 +4,4 @@ jobs:
   build:
     uses: zmkfirmware/zmk-action-workflow/.github/workflows/build-user-config.yml@v0.3.0
     with:
-      args: "--board seeeduino_xiao_ble"
+      board: seeeduino_xiao_ble
