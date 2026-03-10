@@ -87,10 +87,10 @@
 
         NUMBER {
             bindings = <
-&kp UNDERSCORE   &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9  &kp FSLH                                      &kp AT     &kp LBRC      &kp LBKT      &kp PLUS        &kp SEMI
-&kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &trans         &kp ASTRK   &kp COLON  &kp RBRC      &kp RS(RBKT)  &kp COMMA       &kp LT
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp MINUS          &kp COLON      &kp PERIOD  &kp GT     &kp QUESTION  &kp SLASH     &kp UNDERSCORE  &kp TILDE
-&kp KP_NUM       &kp ASTERISK     &kp LEFT_PARENTHESIS  &trans           &trans             &trans         &trans      &trans                                                 &trans
+&kp UNDERSCORE   &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9  &kp FSLH                                  &trans  &trans  &trans  &trans  &trans
+&kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp MINUS          &kp COLON      &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUM       &kp ASTERISK     &kp LEFT_PARENTHESIS  &trans           &trans             &trans         &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
