@@ -1,17 +1,17 @@
         include:
-          - board: seeeduino_xiao_ble
-           shield: roBa_L**
-           artifact-name: roBa_L_workplace**
-           extra-confs: "CONFIG_ZMK_STUDIO=n"**
-          - board: seeeduino_xiao_ble
-           shield: roBa_R**
-           artifact-name: roBa_R_workplace**
-           extra-confs: "CONFIG_ZMK_STUDIO=n"**
-          - board: seeeduino_xiao_ble
-           shield: roBa_L**
-           artifact-name: roBa_L_home_studio**
-           extra-confs: "CONFIG_ZMK_STUDIO=y"**
-          - board: seeeduino_xiao_ble
-           shield: roBa_R**
-           artifact-name: roBa_R_home_studio**
-           extra-confs: "CONFIG_ZMK_STUDIO=y"**
+      - board: seeeduino_xiao_ble
+        shield: roBa_L
+        artifact-name: roBa_L_workplace
+        extra-confs: "CONFIG_ZMK_STUDIO=n"
+      - board: seeeduino_xiao_ble
+        shield: roBa_R
+        artifact-name: roBa_R_workplace
+        extra-confs: "CONFIG_ZMK_STUDIO=n"
+      - board: seeeduino_xiao_ble
+        shield: roBa_L
+        artifact-name: roBa_L_home_studio
+        extra-confs: "CONFIG_ZMK_STUDIO=y"
+      - board: seeeduino_xiao_ble
+        shield: roBa_R
+        artifact-name: roBa_R_home_studio
+        extra-confs: "CONFIG_ZMK_STUDIO=y"
