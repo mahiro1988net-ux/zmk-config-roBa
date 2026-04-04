@@ -8,7 +8,6 @@
     quick-tap-ms = <0>;
 };
 
-/* エンコーダーの感度を下げ、1クリックの移動量を減らす */
 &left_encoder {
     steps = <80>; 
 };
@@ -20,20 +19,14 @@
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
-}; // ←ここでtrackballの設定を一度閉じます
+};
 
 / {
     combos {
         compatible = "zmk,combos";
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
         };
     };
 
@@ -55,7 +48,7 @@
             tapping-term-ms = <200>;
         };
     };
-
+/* --- この下に keymap ノードが続くようにしてください --- */
     keymap {
         compatible = "zmk,keymap";
 
