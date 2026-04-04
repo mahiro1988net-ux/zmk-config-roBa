@@ -8,7 +8,7 @@
     quick-tap-ms = <0>;
 };
 
-/* --- ここに移動しました：独立した設定として記述 --- */
+/* エンコーダーの感度を下げ、1クリックの移動量を減らす */
 &left_encoder {
     steps = <80>; 
 };
@@ -20,11 +20,22 @@
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
-};
+}; // ←ここでtrackballの設定を一度閉じます
 
 / {
     combos {
-/* --- 以下、元のコードが続く --- */
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
+
+        shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <12 13>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -40,7 +51,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
