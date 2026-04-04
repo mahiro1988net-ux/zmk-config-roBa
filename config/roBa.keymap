@@ -5,11 +5,11 @@
 
 /* エンコーダーの感度を下げて爆走を止める（独立して記述） */
 &left_encoder {
-    steps = <80>; 
+    steps = <40>; 
 };
 
 &right_encoder {
-    steps = <80>;
+    steps = <40>;
 };
 
 &mt {
