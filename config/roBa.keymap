@@ -82,7 +82,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>, <&inc_dec_kp NO_OP NO_OP>;
         };
 
         NUMBER {
