@@ -8,12 +8,7 @@
     quick-tap-ms = <0>;
 };
 
-&trackball {
-    automouse-layer = <4>;
-    scroll-layers = <5>;
-};
-
-/* ここから追加：1クリックあたりの移動量を物理的に減らす */
+/* --- ここに移動しました：独立した設定として記述 --- */
 &left_encoder {
     steps = <80>; 
 };
@@ -21,34 +16,15 @@
 &right_encoder {
     steps = <80>;
 };
-/* ここまで追加 */
-    // arrows {
-    //     layers = <3>;
-    //     bindings =
-    //         <&kp RIGHT_ARROW>,
-    //         <&kp LEFT_ARROW>,
-    //         <&kp UP_ARROW>,
-    //         <&kp DOWN_ARROW>;
-    //     tick = <10>;
-    //     wait-ms = <5>;
-    //     tap-ms = <5>;
-    // };
+
+&trackball {
+    automouse-layer = <4>;
+    scroll-layers = <5>;
 };
 
 / {
     combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-    };
+/* --- 以下、元のコードが続く --- */
 
     macros {
         to_layer_0: to_layer_0 {
