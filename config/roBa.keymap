@@ -82,7 +82,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            ensor-bindings = <&inc_dec_cp SCROLL_DOWN SCROLL_UP>;
+            sensor-bindings = <&inc_dec_cp SCROLL_DOWN SCROLL_UP>;
         };
 
         NUMBER {
