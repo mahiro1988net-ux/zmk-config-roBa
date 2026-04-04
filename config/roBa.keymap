@@ -82,7 +82,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&inc_dec_kp SCRL_RIGHT 0>, <&inc_dec_kp 0 SCRL_LEFT>;
         };
 
         NUMBER {
