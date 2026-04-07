@@ -57,7 +57,7 @@
 &kp Q             &kp W                    &kp E         &kp R                        &kp T                                                                                  &kp Y                   &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S                    &kp D         &kp F                        &kp G                             &kp LS(LG(S))               &kp ASTERISK             &kp H                   &kp J  &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X                    &kp C         &kp V                        &kp B                             &lt_to_layer_0 4 MINUS      &kp LEFT_PARENTHESIS     &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_CONTROL  &mt LEFT_SHIFT LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LANGUAGE_6  &lt_to_layer_0 0 INTERNATIONAL_4  &lt_to_layer_0 3 SPACE      &mt BACKSPACE BACKSPACE  &lt_to_layer_0 1 ENTER                             &mt DEL DEL
+&kp LEFT_CONTROL  &mt LEFT_SHIFT LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LANGUAGE_6  &lt_to_layer_0 2 INTERNATIONAL_4  &lt_to_layer_0 3 SPACE      &mt BACKSPACE BACKSPACE  &lt_to_layer_0 1 ENTER                             &mt DEL DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
