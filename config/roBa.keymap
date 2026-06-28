@@ -65,10 +65,10 @@
 
         SYMBOL {
             bindings = <
-&kp LEFT_BRACKET       &kp LEFT_BRACE  &kp RS(RBRC)  &kp RIGHT_BRACKET  &trans                      &trans  &trans  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans
-&kp RIGHT_PARENTHESIS  &kp RS(TILDE)   &kp LCTRL     &trans             &trans  &trans      &trans  &trans  &trans  &trans        &kp BACKSLASH         &trans
-&trans                 &trans          &trans        &trans             &trans  &trans      &trans  &trans  &trans  &trans        &trans                &trans
-&trans                 &trans          &trans        &trans             &trans  &trans      &trans  &trans                                              &trans
+&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp RS(LCTRL)  &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans
+&trans           &trans  &trans    &trans      &trans       &trans      &trans  &trans         &trans         &kp RIGHT_BRACKET  &kp BACKSLASH         &trans
+&trans           &trans  &trans    &trans      &trans       &trans      &trans  &trans         &trans         &kp RIGHT_BRACE    &kp PIPE              &trans
+&trans           &trans  &trans    &trans      &trans       &trans      &trans  &trans                                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
