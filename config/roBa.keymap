@@ -32,21 +32,6 @@
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
         };
-
-        Ctrl+X {
-            bindings = <&kp LC(X)>;
-            key-positions = <7 8>;
-        };
-
-        Ctrl+C {
-            bindings = <&kp LC(C)>;
-            key-positions = <19 20>;
-        };
-
-        Ctrl+V {
-            bindings = <&kp LC(V)>;
-            key-positions = <31 32>;
-        };
     };
 
     macros {
