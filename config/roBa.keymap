@@ -27,11 +27,6 @@
             bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
-
-        Shift+TAB {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
     };
 
     macros {
@@ -59,10 +54,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W                    &kp E         &kp R                   &kp T                                                                                  &kp Y                   &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S                    &kp D         &kp F                   &kp G                             &kp LS(LG(S))               &kp ASTERISK             &kp H                   &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X                    &kp C         &kp V                   &kp B                             &kp MINUS                   &kp LEFT_PARENTHESIS     &kp N                   &kp M  &kp COMMA  &kp DOT  &lt 4 SLASH
-&kp LEFT_CONTROL  &mt LEFT_SHIFT LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 GRAVE  &lt_to_layer_0 2 INTERNATIONAL_4  &lt_to_layer_0 3 SPACE      &mt BACKSPACE BACKSPACE  &lt_to_layer_0 1 ENTER                             &mt DEL DEL
+&kp Q             &kp W                    &kp E         &kp R                    &kp T                                                                                   &kp Y                    &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S                    &kp D         &kp F                    &kp G                                              &kp LS(LG(S))               &kp ASTERISK             &kp H                    &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X                    &kp C         &kp V                    &kp B                                              &kp MINUS                   &kp LEFT_PARENTHESIS     &kp N                    &kp M  &kp COMMA  &kp DOT  &lt 4 SLASH
+&kp LEFT_CONTROL  &mt LEFT_SHIFT LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 GRAVE   &lt_to_layer_0 2 INTERNATIONAL_4   &lt_to_layer_0 3 SPACE      &mt BACKSPACE BACKSPACE  &lt_to_layer_0 1 ENTER                                             &mt DEL DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -70,10 +65,10 @@
 
         SYMBOL {
             bindings = <
-&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                      &trans  &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans
-&trans           &trans  &trans    &trans      &trans       &trans      &trans  &trans  &trans         &kp RIGHT_BRACKET  &kp BACKSLASH         &trans
-&trans           &trans  &trans    &trans      &trans       &trans      &trans  &trans  &trans         &kp RIGHT_BRACE    &kp PIPE              &trans
-&trans           &trans  &trans    &trans      &trans       &trans      &trans  &trans                                                          &trans
+&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                        &trans  &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans
+&trans           &trans  &trans    &trans      &trans       &trans        &trans  &trans  &trans         &kp RIGHT_BRACKET  &kp BACKSLASH         &trans
+&trans           &trans  &trans    &trans      &trans       &trans        &trans  &trans  &trans         &kp RIGHT_BRACE    &kp PIPE              &trans
+&trans           &trans  &trans    &trans      &trans       &trans        &trans  &trans                                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
@@ -81,19 +76,19 @@
 
         NUMBER {
             bindings = <
-&kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9  &kp SLASH                                      &trans  &kp N7  &kp N8  &kp N9  &trans
-&kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &kp KP_NUMLOCK      &trans  &trans  &kp N4  &kp N5  &kp N6  &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp MINUS          &kp COLON           &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans
-&kp UNDERSCORE   &kp ASTERISK     &kp LEFT_PARENTHESIS  &trans           &trans             &trans              &trans  &trans                          &trans
+&kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9  &kp SLASH                                                     &trans  &kp N7  &kp N8  &kp N9  &trans
+&kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &kp KP_NUMLOCK              &trans  &trans  &kp N4  &kp N5  &kp N6  &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp MINUS          &kp COLON                   &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans
+&kp UNDERSCORE   &kp ASTERISK     &kp LEFT_PARENTHESIS  &trans           &trans             &trans                      &trans  &trans                          &trans
             >;
         };
 
         ARROW_FUNCTION {
             bindings = <
-&kp F1  &kp F2    &kp F3    &kp F4     &kp F5                      &kp F6  &kp F7    &kp F8    &kp F9     &kp F10
-&trans  &trans    &kp UP    &trans     &trans  &trans      &trans  &trans  &trans    &kp UP    &trans     &kp F11
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans      &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F12
-&trans  &trans    &trans    &trans     &trans  &trans      &trans  &trans                                 &trans
+&kp F1  &kp F2    &kp F3    &kp F4     &kp F5                        &kp F6  &kp F7    &kp F8    &kp F9     &kp F10
+&trans  &trans    &kp UP    &trans     &trans  &trans        &trans  &trans  &trans    &kp UP    &trans     &kp F11
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans        &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F12
+&trans  &trans    &trans    &trans     &trans  &trans        &trans  &trans                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN)>;
@@ -101,10 +96,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB5  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                        &trans  &mkp MB5  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &mkp MB4  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -112,10 +107,10 @@
 
         Bluetooth {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
