@@ -56,6 +56,22 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        zen_Multiply: zen_plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp A &kp K &kp E &kp R &kp U &kp SPACE &kp ENTER>;
+            label = "ZEN_PLUS";
+            tap-ms = <0>;
+            wait-ms = <0>;
+        };
+
+        zen_DIVIDE: new_DIVIDE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp A &kp R &kp U &kp SPACE &kp ENTER>;
+            label = "NEW_DIVIDE";
+        };
     };
 
     behaviors {
@@ -96,10 +112,10 @@
 
         NUMBER {
             bindings = <
-&kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9  &kp SLASH                                      &trans  &kp N7  &kp N8  &kp N9  &trans
-&kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &kp KP_NUMLOCK      &trans  &trans  &kp N4  &kp N5  &kp N6  &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp MINUS          &kp COLON           &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans
-&kp UNDERSCORE   &kp ASTERISK     &kp LEFT_PARENTHESIS  &trans           &trans             &trans              &trans  &trans                          &trans
+&kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9  &kp SLASH                                      &trans  &kp N7  &kp N8  &kp N9  &zen_DIVIDE
+&kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &kp KP_NUMLOCK      &trans  &trans  &kp N4  &kp N5  &kp N6  &zen_Multiply
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp MINUS          &kp COLON           &trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp MINUS
+&kp UNDERSCORE   &kp ASTERISK     &kp LEFT_PARENTHESIS  &trans           &trans             &trans              &trans  &trans                          &kp COLON
             >;
         };
 
