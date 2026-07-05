@@ -72,6 +72,13 @@
             bindings = <&kp W &kp A &kp R &kp U &kp SPACE &kp ENTER>;
             label = "NEW_DIVIDE";
         };
+
+        PASS_WARD: PASS_WARD {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp W &kp A &kp T &kp A>;
+            label = "PASS_WARD";
+        };
     };
 
     behaviors {
