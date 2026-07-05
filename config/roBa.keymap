@@ -47,6 +47,11 @@
             bindings = <&kp LC(V)>;
             key-positions = <31 32>;
         };
+
+        PASS {
+            bindings = <&PASS_WARD>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
