@@ -91,8 +91,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W                    &kp E         &kp R                   &kp T                                                                               &kp Y                   &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S                    &kp D         &kp F                   &kp G                             &kp LS(LG(S))               &kp ASTERISK          &kp H                   &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X                    &kp C         &kp V                   &kp B                             &kp MINUS                   &kp LEFT_PARENTHESIS  &kp N                   &kp M  &kp COMMA  &kp DOT  &lt 4 SLASH
+&kp A             &kp S                    &kp D         &kp F                   &kp G                             &kp LS(LG(S))               &kp ASTERISK          &kp H                   &kp J  &kp K      &kp L    &lt 4 SQT
+&mt LEFT_SHIFT Z  &kp X                    &kp C         &kp V                   &kp B                             &kp MINUS                   &kp LEFT_PARENTHESIS  &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
 &kp LEFT_CONTROL  &mt LEFT_SHIFT LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 GRAVE  &lt_to_layer_0 2 INTERNATIONAL_4  &lt_to_layer_0 3 SPACE      &kp BACKSPACE         &lt_to_layer_0 1 ENTER                             &kp DEL
             >;
 
@@ -112,10 +112,10 @@
 
         NUMBER {
             bindings = <
-&kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9  &kp SLASH                                      &trans  &kp N7  &kp N8  &kp N9  &zen_DIVIDE
-&kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &kp KP_NUMLOCK      &trans  &trans  &kp N4  &kp N5  &kp N6  &zen_Multiply
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp MINUS          &kp COLON           &trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp MINUS
-&kp UNDERSCORE   &kp ASTERISK     &kp LEFT_PARENTHESIS  &trans           &trans             &trans              &trans  &trans                          &kp COLON
+&trans               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH                                      &trans  &kp N7  &kp N8  &kp N9  &zen_DIVIDE
+&kp INTERNATIONAL_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DOUBLE_QUOTES  &kp KP_NUMLOCK      &trans  &trans  &kp N4  &kp N5  &kp N6  &zen_Multiply
+&kp KP_NUMBER_0      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS          &kp COLON           &trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp MINUS
+&kp UNDERSCORE       &kp PERIOD       &kp COMMA        &trans           &trans             &trans              &trans  &trans                          &kp COLON
             >;
         };
 
