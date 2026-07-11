@@ -50,12 +50,17 @@
 
         PASS {
             bindings = <&PASS_WARD>;
-            key-positions = <8 9>;
+            key-positions = <20 21>;
         };
 
         layer5 {
             bindings = <&sl 5>;
             key-positions = <26 27>;
+        };
+
+        Ctrl_Alt_Delete {
+            bindings = <&Ctrl_Alt_Delete>;
+            key-positions = <8 9>;
         };
     };
 
@@ -88,6 +93,13 @@
             #binding-cells = <0>;
             bindings = <&kp I &kp W &kp A &kp T &kp A>;
             label = "PASS_WARD";
+        };
+
+        Ctrl_Alt_Delete: Ctrl_Alt_Delete {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LC(LEFT_ALT) &kp DELETE>;
+            label = "CTRL_ALT_DELETE";
         };
     };
 
