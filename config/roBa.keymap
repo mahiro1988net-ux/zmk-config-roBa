@@ -94,13 +94,6 @@
             bindings = <&kp I &kp W &kp A &kp T &kp A>;
             label = "PASS_WARD";
         };
-
-        Ctrl_Alt_Delete: Ctrl_Alt_Delete {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp DEL &kp LA(LC(DELETE))>;
-            label = "CTRL_ALT_DELETE";
-        };
     };
 
     behaviors {
