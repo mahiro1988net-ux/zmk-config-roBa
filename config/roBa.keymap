@@ -52,6 +52,11 @@
             bindings = <&PASS_WARD>;
             key-positions = <8 9>;
         };
+
+        layer5 {
+            bindings = <&sl 5>;
+            key-positions = <26 27>;
+        };
     };
 
     macros {
@@ -102,10 +107,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W                    &kp E         &kp R                   &kp T                                                                           &kp Y                   &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S                    &kp D         &kp F                   &kp G                             &kp LS(LG(S))               &kp LEFT_BRACKET  &kp H                   &kp J  &kp K      &kp L    &lt_to_layer_0 4 SQT
-&mt LEFT_SHIFT Z  &kp X                    &kp C         &kp V                   &kp B                             &kp MINUS                   &kp LS(EQUAL)     &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
-&kp LEFT_CONTROL  &mt LEFT_SHIFT LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 GRAVE  &lt_to_layer_0 2 INTERNATIONAL_4  &lt_to_layer_0 3 SPACE      &kp BACKSPACE     &lt_to_layer_0 1 ENTER                             &kp DEL
+&kp Q             &kp W                    &kp E         &kp R      &kp T                                                                           &kp Y                   &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S                    &kp D         &kp F      &kp G                             &kp LS(LG(S))               &kp LEFT_BRACKET  &kp H                   &kp J  &kp K      &kp L    &lt_to_layer_0 4 SQT
+&mt LEFT_SHIFT Z  &kp X                    &kp C         &kp V      &kp B                             &kp MINUS                   &kp LS(EQUAL)     &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
+&kp LEFT_CONTROL  &mt LEFT_SHIFT LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &lt_to_layer_0 2 INTERNATIONAL_4  &lt_to_layer_0 3 SPACE      &kp BACKSPACE     &lt_to_layer_0 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
