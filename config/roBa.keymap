@@ -98,7 +98,7 @@
         Ctrl_Alt_Delete: Ctrl_Alt_Delete {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LC(LEFT_ALT) &kp DELETE>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp DELETE>;
             label = "CTRL_ALT_DELETE";
         };
     };
